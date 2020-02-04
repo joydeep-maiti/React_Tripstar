@@ -1,0 +1,155 @@
+.carousel{
+    height: 100vh;
+}
+.carouselimg {
+    width: 100vw;
+    height: 100vh;
+}
+.readmoreDiv1 {
+    position: relative;
+    right: 10vw;
+    bottom: 35vh;
+    float: right;
+    color: white;
+}
+.readmoreDiv2 {
+    position: relative;
+    left: 10vw;
+    bottom: 35vh;
+    float: left;
+    color: white;
+}
+
+.rdminfo1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: right;
+    display: block;
+}
+.rdminfo11 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left;
+    display: block;
+}
+.rdminfo2 {
+    font-size: 70px;
+    font-weight: 600;
+    display: block;
+    padding: 0;
+    margin-top: -5vh;
+    margin-left: -5px;
+}
+.rdmbtn {
+    width: 10vw;
+    background-color: rgb(0, 174, 255);
+    text-align: center;
+    padding: 5px 10px;
+    float: right;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.rdmbtn2 {
+    width: 10vw;
+    background-color: rgb(0, 174, 255);
+    text-align: center;
+    padding: 5px 10px;
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-left: 15px; */
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel{
+        max-height: 40vh;
+    }
+    .carouselimg {
+        width: 100vw;
+        max-height: 40vh;
+    }
+    .rdmbtn {
+        width: 18vw;
+    }
+    .rdmbtn2 {
+        width: 18vw;
+    }
+    .rdminfo1, .rdminfo11 {
+        font-size: 20px;
+    }
+    .rdminfo2 {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    .readmoreDiv1 {
+        bottom: 23vh;
+    }
+    .readmoreDiv2 {
+        bottom: 23vh;
+    }
+    .rdmbtn {
+        width: 80px;
+        font-size: 13px;
+        font-weight: 400;
+        margin-right: 0;
+        padding: 3px 5px;
+    }
+    .rdmbtn2 {
+        width: 80px;
+        font-size: 13px;
+        font-weight: 400;
+        margin-right: 0;
+        padding: 3px 5px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .carousel{
+        height: 70vh;
+    }
+    .carouselimg {
+        width: 100vw;
+        height: 70vh;
+    }
+    .rdmbtn {
+        width: 20vw;
+    }
+    .rdmbtn2 {
+        width: 20vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .carousel{
+        height: 90vh;
+    }
+    .carouselimg {
+        width: 100vw;
+        height: 90vh;
+    }
+    .rdmbtn {
+        width: 20vw;
+        
+    }
+    .rdmbtn2 {
+        width: 20vw;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .rdmbtn {
+        width: 12vw;
+    }
+    .rdmbtn2 {
+        width: 12vw;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
