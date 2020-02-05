@@ -2,10 +2,82 @@
     padding: 0 !important;
     margin: 0 !important;
 }
+.titlehead {
+    color: rgb(120, 121, 122);
+}
+.descspan {
+    text-align: center;
+    color: rgb(150, 151, 151);
+}
+.destinfodiv {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+}
+.destinfodiv2 {
+    position: absolute;
+    bottom: 250px;
+    color: white;
+}
 
-/* .destsmbximg1 {
-    height: 340px;
-} */
+.destprcdiv {
+    background-color: rgba(0, 153, 255, 0.692);
+    width: 150px;
+}
+.fromspn {
+    float: left;
+    padding-left: 10px;
+}
+.pricespn {
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: -8px;
+}
+.desttitle {
+    float: left;
+    padding-left: 10px;
+    font-weight: 400;
+}
 
+@media only screen and (max-width: 576px) and (min-width: 360px) {
+    .destinfodiv2 {
+        bottom: 70vw;
+    }
+}
+/* @media only screen and (max-width: 500px) and (min-width: 410px) {
+    .destinfodiv2 {
+        bottom: 290px;
+    }
+}  */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .destinfodiv2 {
+        bottom: 160px;
+    }
+    .destprcdiv {
+        width: 130px;
+    }
+    .pricespn {
+        font-size: 20px;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .destinfodiv2 {
+        bottom: 220px;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
 
 

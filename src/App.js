@@ -12,8 +12,13 @@ class App extends Component  {
         {/* <Navbar /> */}
         
           <Slider />
-          <Destinations />
-          <Activities />
+          <div class="destDiv">
+            <Destinations />
+          </div>
+          <div class="destDiv">
+            <Activities />
+          </div>
+          
       </div>
       
     );

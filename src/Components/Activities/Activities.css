@@ -1,0 +1,39 @@
+.activitiesTitle {
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top:-350px;
+    float: right;
+    padding: 5px 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .activitiesTitle {
+        top:-45vw;
+        font-size: 15px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .activitiesTitle {
+        top:-220px;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .activitiesTitle {
+        top:-300px;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
