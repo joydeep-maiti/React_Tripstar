@@ -1,0 +1,36 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 97vw;
+    z-index: 999;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.myNavClass {
+    background-color: rgba(255, 255, 255, 0);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.myNavTitle {
+    font-size: 40px;
+}
+.myNavLink {
+    font-size: 18px;
+}
+#navbarMenu {
+    float: right;
+}
+
+@media only screen and (max-width: 576px) {
+    #navbarMenu {
+        background-color: rgb(112, 107, 107); 
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        /* color: rgb(141, 136, 136); */
+        padding-left: 10px;
+    }
+    .myNavTitle {
+        font-size: 30px;
+    }
+}
