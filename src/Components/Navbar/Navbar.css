@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+
 .navbar {
     position: absolute;
     top: 0;
@@ -13,7 +15,9 @@
     color: white;
 }
 .myNavTitle {
-    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: 500px;
 }
 .myNavLink {
     font-size: 18px;
@@ -21,7 +25,9 @@
 #navbarMenu {
     float: right;
 }
-
+.selected {
+    color: aqua;
+}
 @media only screen and (max-width: 576px) {
     #navbarMenu {
         background-color: rgb(112, 107, 107); 

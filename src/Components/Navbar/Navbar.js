@@ -1,7 +1,11 @@
 import React from 'react'
 import './Navbar.css'
+import { withRouter, NavLink,Link  } from 'react-router-dom'
 
-const navbar = ()=> {
+
+const navbar = (props)=> {
+    // console.log("----props",props);
+    // console.log("-----------------hi");
     return(
         <nav class="navbar navbar-expand-sm navbar-dark myNavClass" >
             <a href="#" class="navbar-brand myNavTitle">Tripster</a>
@@ -11,16 +15,20 @@ const navbar = ()=> {
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ml-auto navMenu" >
                     <li class="active nav-item">
-                        <a href="#" class="nav-link myNavLink">Home</a>
+                        <Link  to="/" class="nav-link myNavLink">Home</Link>
+                        {/* <a href="#" class="nav-link myNavLink">Home</a> */}
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link myNavLink">Packages</a>
+                        <Link  to="/packages" class="nav-link myNavLink" >Packages</Link>
+                        {/* <a href="#" class="nav-link myNavLink">Packages</a> */}
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link myNavLink">Tours</a>
+                        <Link  to="/tours" class="nav-link myNavLink" >Tours</Link>
+                        {/* <a href="#" class="nav-link myNavLink">Tours</a> */}
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link myNavLink">Contact</a>
+                        <Link  to="/contact" class="nav-link myNavLink" >Contact</Link>
+                        {/* <a href="#" class="nav-link myNavLink">Contact</a> */}
                     </li>
                 </ul>
             </div>
@@ -29,4 +37,4 @@ const navbar = ()=> {
     )
 }
 
-export default navbar;
+export default withRouter(navbar);

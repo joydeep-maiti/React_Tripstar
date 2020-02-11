@@ -6,14 +6,28 @@ import img4 from '../../assets/img04.jpg'
 import img5 from '../../assets/img05.jpg'
 import img6 from '../../assets/img06.jpg'
 import './Destinations.css'
+import { withRouter } from 'react-router-dom'
 
-const destinations = ()=> {
+const destinations = (props)=> {
+    // console.log("=============",props)
+    const onClickHandler = (dest)=> {
+        console.log("DEST", dest.toUpperCase());
+        props.history.push("./destination",{
+                destination: dest.toUpperCase()
+            }
+        )
+        // props.history.push({
+        //         pathname: "./destination",
+        //         search: "?"+dest.toUpperCase()
+        //     }
+        // )
+    }
     return (
         <div class="container pt-5 text-center">
             <h3 class="pt-2 titlehead">Destinations</h3>
             <span class="descspan">Take the break you deserve, pick your dream<br/> destination</span>
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center px-1 destsmbximg1">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center px-1 destsmbximg1" onClick={()=>onClickHandler("Sikkim")}>
                     <img class="pt-2 img-fluid" src={img2} alt="heart" />
                     <div class="destinfodiv">
                         <div class="destprcdiv">
@@ -24,7 +38,7 @@ const destinations = ()=> {
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center px-1">
-                    <div>
+                    <div onClick={()=>onClickHandler("Nagaland")}>
                         <img class="pt-2 img-fluid" src={img3} alt="desktop" />
                         <div class="destinfodiv2">
                             <div class="destprcdiv">
@@ -34,7 +48,7 @@ const destinations = ()=> {
                             <span class="desttitle">Dzukou, Nagaland</span>
                         </div>
                     </div>
-                    <div>
+                    <div onClick={()=>onClickHandler("Bhutan")}>
                         <img class="pt-2 img-fluid" src={img5} alt="desktop" />
                         <div class="destinfodiv">
                             <div class="destprcdiv">
@@ -47,7 +61,7 @@ const destinations = ()=> {
                     
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3 text-center px-1">
-                    <div>
+                    <div onClick={()=>onClickHandler("Arunachal")}>
                         <img class="pt-2 img-fluid" src={img4} alt="desktop" />
                         <div class="destinfodiv2">
                             <div class="destprcdiv">
@@ -57,7 +71,7 @@ const destinations = ()=> {
                             <span class="desttitle">Tezu, Arunachal</span>
                         </div>
                     </div>
-                    <div>
+                    <div onClick={()=>onClickHandler("Assam")}>
                         <img class="pt-2 img-fluid" src={img6} alt="desktop" />
                         <div class="destinfodiv">
                             <div class="destprcdiv">
@@ -76,4 +90,4 @@ const destinations = ()=> {
     )
 }
 
-export default destinations;
+export default withRouter(destinations);
