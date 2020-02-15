@@ -10,10 +10,11 @@ class Destination extends Component  {
     const destination = this.props.location.state.destination
     return (
       <div>
-        <div class="coverDiv" >
+        <div class="coverDiv" style={{backgroundImage: "url(" +  Cover + ")"}}>
           {/* <img class="coverimg" src={Cover}  alt="destination" /> */}
-          <span class="covertitle">{destination}</span>
+          <h1 class="covertitle">{destination}</h1>
           <div class="overlaycls"></div>
+          {/* <h2 class="covertitle">{destination}</h2> */}
         </div>
       </div>
       
