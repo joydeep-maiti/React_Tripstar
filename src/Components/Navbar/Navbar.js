@@ -8,7 +8,7 @@ const navbar = (props)=> {
     // console.log("-----------------hi");
     return(
         <nav class="navbar navbar-expand-sm navbar-dark myNavClass" >
-            <a href="#" class="navbar-brand myNavTitle">Tripster</a>
+            <a href="#" class="navbar-brand myNavTitle">NatureBeyond</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>

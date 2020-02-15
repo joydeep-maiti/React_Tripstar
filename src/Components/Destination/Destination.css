@@ -1,5 +1,7 @@
 .coverDiv {
     text-align: center;
+    width: 100vw;
+    height: 65vh;
     /* position: relative; */
 }
 .coverimg {

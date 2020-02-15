@@ -60,6 +60,9 @@
     font-weight: 400;
     /* margin-left: 15px; */
 }
+.carousel-inner .carousel-item{
+    height: 100vh;
+}
 
 @media only screen and (max-width: 600px) {
     .carousel{

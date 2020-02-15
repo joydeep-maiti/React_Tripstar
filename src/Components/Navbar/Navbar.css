@@ -16,7 +16,7 @@
 }
 .myNavTitle {
     font-family: 'Great Vibes', cursive;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 500px;
 }
 .myNavLink {
@@ -37,6 +37,6 @@
         padding-left: 10px;
     }
     .myNavTitle {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
