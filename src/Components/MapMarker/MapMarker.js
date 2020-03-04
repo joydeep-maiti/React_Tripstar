@@ -1,13 +1,14 @@
-import React, { Component } from "react"
-import { compose } from "recompose"
+import React, { Component } from "react";
+import { compose } from "recompose";
 import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
   Marker,
   InfoWindow
-} from "react-google-maps"
-import './MapMarker.css'
+} from "react-google-maps";
+import './MapMarker.css';
+import Logo from '../../assets/sik2.jpg'
 
 const MapWithAMarker = compose(withScriptjs, withGoogleMap)(props => {
 
@@ -24,7 +25,15 @@ const MapWithAMarker = compose(withScriptjs, withGoogleMap)(props => {
             {props.selectedMarker === marker &&
               <InfoWindow>
                 <div>
-                  {marker.shelter}
+                  <div style={{display:"inline-block","vertical-align": "top"}}>
+                      <img src={Logo} width="70px" height="70px"></img>
+                  </div>
+                  <div style={{display:"inline-block", marginLeft:"20px",fontSize:"15px","vertical-align": "center", height:"70px"}}>
+                    {marker.shelter}<br/>
+                    <span style={{fontSize:"12px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br/>
+                    <a style={{fontSize:"12px",position: "absolute",bottom: "14px", fontWeight:500}} href="https://react-tripster.firebaseapp.com" target="blank">Know More</a>
+                  </div>
+                  
                 </div>
               </InfoWindow>}
             
